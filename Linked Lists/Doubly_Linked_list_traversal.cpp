@@ -1,31 +1,29 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-struct Node{
+struct Node
+{
     int data;
-    struct Node* prev;
-    struct Node* next;
+    struct Node *prev;
+    struct Node *next;
 };
 
-void dlTraversal(struct Node* head){
-    struct Node* p = head;
-    while (p!=NULL)
+void dlTraversal(struct Node *head)
+{
+    struct Node *p = head;
+    while (p != NULL)
     {
-        cout<<p->data<<" ";
+        cout << p->data << " ";
         p = p->next;
     }
-
-    
-    
 }
 
-
-
-int main(){
-    struct Node* head = new Node;
-    struct Node* second = new Node;
-    struct Node* third = new Node;
-    struct Node* fourth = new Node;
+int main()
+{
+    struct Node *head = new Node;
+    struct Node *second = new Node;
+    struct Node *third = new Node;
+    struct Node *fourth = new Node;
 
     head->data = 10;
     head->next = second;
@@ -44,9 +42,6 @@ int main(){
     fourth->prev = third;
 
     dlTraversal(head);
-
-
-
 
     return 0;
 }

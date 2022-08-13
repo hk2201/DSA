@@ -9,13 +9,22 @@ struct Node{
 
 void dlTraversal(struct Node* head){
     struct Node* p = head;
-    while (p!=NULL)
+    while (p->next!=NULL)
     {
-        cout<<p->data<<" ";
+        // cout<<p->data<<" ";
         p = p->next;
     }
+    cout<<p->data<<" ";
 
+
+    do
+    {
+        p = p->prev;
+        cout<<p->data<<" ";
+    } while (p->prev!=NULL);
     
+
+
     
 }
 

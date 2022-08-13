@@ -28,11 +28,9 @@ int binarySearch(int arr[],int size,int element){
         }
         if(arr[mid]<element){
             low = mid + 1;
-            return low;
         }
         else{
-            high = mid - 1;
-            return high;
+            high = high - 1;
         }
 
     }
@@ -54,7 +52,7 @@ int main()
 
     int array[] = {1,2,3,4,6,7,8,9,10};
     int size = sizeof(array)/sizeof(int);
-    int element = 2;
+    int element = 1;
     int binary = binarySearch(array,size,element);
     cout<<"The element "<<element<<" was found at "<<binary;
 

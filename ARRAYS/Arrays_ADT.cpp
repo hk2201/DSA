@@ -7,10 +7,10 @@ class Arr{
     int* ptr;         // We are making this here pointer because we are creating dynamic arr in heap
 
     public:
-        Arr(int Ts,int Us){
-            T_size = Ts;
+        Arr(int Us){
+            // T_size = Ts;
             U_size = Us;
-            ptr = new int[Ts];
+            ptr = new int[Us];
 
         }
 
@@ -36,7 +36,7 @@ class Arr{
 };
 
 int main(){
-    Arr hk(10,5);
+    Arr hk(15);
 
     hk.setData();
     hk.showData();

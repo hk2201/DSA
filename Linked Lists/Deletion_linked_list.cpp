@@ -25,11 +25,13 @@ struct Node *deletionFirst(struct Node *head)
     return head;
 };
 
-struct Node* deletioninBetween(struct Node* head,int index){
-    struct Node* p = head;
-    struct Node* q1 = head->next;
+struct Node *deletioninBetween(struct Node *head, int index)
+{
+    struct Node *p = head;
+    struct Node *q1 = head->next;
     int i = 0;
-    while(i!=index-1){
+    while (i != index - 1)
+    {
         p = p->next;
         q1 = q1->next;
         i++;
@@ -40,31 +42,34 @@ struct Node* deletioninBetween(struct Node* head,int index){
     return head;
 }
 
-struct Node* deletionatEnd(struct Node* head){
-    struct Node* p = head;
-    struct Node* q = p->next ;
-   
-    while(q->next!=NULL){
+struct Node *deletionatEnd(struct Node *head)
+{
+    struct Node *p = head;
+    struct Node *q = p->next;
+
+    while (q->next != NULL)
+    {
         p = p->next;
-        q= q->next;
+        q = q->next;
     }
     p->next = q->next;
     free(q);
 
     return head;
-
 };
 
-struct Node* deletionforValue(struct Node* head,int value){
-    struct Node* p1 = head;
-    struct Node* a = head->next;
-    while(a->data!=value && a->next!=NULL){
+struct Node *deletionforValue(struct Node *head, int value)
+{
+    struct Node *p1 = head;
+    struct Node *a = head->next;
+    while (a->data != value && a->next != NULL)
+    {
         p1 = p1->next;
-        a = a->next; 
-
+        a = a->next;
     }
 
-    if(a->data==value){
+    if (a->data == value)
+    {
         p1->next = a->next;
         free(a);
     }
@@ -106,8 +111,6 @@ int main()
     six->data = 60;
     six->next = NULL;
 
-
-
     cout << "Before Deletion" << endl;
     LLtraversal(head);
     cout << endl;
@@ -115,26 +118,21 @@ int main()
     cout << "Deletion at Beginning" << endl;
     head = deletionFirst(head);
     LLtraversal(head);
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Deletion in Between"<<endl;
-    head = deletioninBetween(head,2);
+    cout << "Deletion in Between" << endl;
+    head = deletioninBetween(head, 2);
     LLtraversal(head);
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Deletion at end"<<endl;
+    cout << "Deletion at end" << endl;
     head = deletionatEnd(head);
     LLtraversal(head);
-    cout<<endl;
+    cout << endl;
 
-
-    cout<<"Deletion for a particular value"<<endl;
-    head = deletionforValue(head,30);
+    cout << "Deletion for a particular value" << endl;
+    head = deletionforValue(head, 30);
     LLtraversal(head);
-
-    
-
-
 
     return 0;
 }

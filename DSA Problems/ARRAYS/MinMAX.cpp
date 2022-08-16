@@ -15,7 +15,6 @@ public:
 
     void getele();
 
-    void Min();
     void Max();
 };
 

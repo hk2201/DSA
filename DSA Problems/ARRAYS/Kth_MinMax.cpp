@@ -29,7 +29,7 @@ public:
         {
             for (int j = i; j < size; j++)
             {
-                if (arr[i] >= arr[j])
+                if(arr[i] >= arr[j])
                 {
                     int temp = arr[i];
                     arr[i] = arr[j];

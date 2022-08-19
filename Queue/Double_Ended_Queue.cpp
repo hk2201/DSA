@@ -94,7 +94,6 @@ int dequeuef(struct queue *ptr)
             ptr->f++;
         }
         x = ptr->arr[ptr->f];
-        // ptr->f--;
     }
     return x;
 }

@@ -13,7 +13,7 @@ void printArray(int *A, int size)
 void BubbleSort(int *A, int size)
 {
     int isSorted = 0;                  // For Adaptive Purpose
-    for (int i = 0; i < size - 1; i++) // No of passes
+    for (int i = 0; i < size ; i++) // No of passes
     {
         cout << "No of Passes performed are " << i + 1 << endl;
         isSorted = 1;
@@ -36,8 +36,8 @@ void BubbleSort(int *A, int size)
 
 int main()
 {
-    // int A[] = {12,1,4,45,10,5};
-    int A[] = {1, 2, 3, 4, 5, 6};
+    int A[] = {12,1,4,45,10,5};
+    // int A[] = {1, 2, 3, 4, 5, 6};
     // If array is sorted it should not perform all the passes (making it adaptive)
     int size = 6;
 

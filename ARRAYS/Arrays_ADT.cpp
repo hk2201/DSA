@@ -8,7 +8,7 @@ class Arr{
 
     public:
         Arr(int Us){
-            // T_size = Ts;
+            T_size = Ts;
             U_size = Us;
             ptr = new int[Us];
 

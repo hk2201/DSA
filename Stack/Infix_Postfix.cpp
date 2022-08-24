@@ -126,7 +126,7 @@ char *infixTopostfix(char *infix)
 
 int main()
 {
-    char *infix = "x-y/z-k*d";
+    char *infix = "(m+n)*(p*q-o)*r/g";
     cout << "The postfix to infix is " << infixTopostfix(infix);
 
     return 0;

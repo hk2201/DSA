@@ -41,6 +41,8 @@ int partition(int *arr, int low, int high)
     return j; // pivot position yaha pr ajeyga.
 }
 
+
+// Recursive quickSort
 void quickSort(int *arr, int low, int high)
 {
     int partitionIndex;

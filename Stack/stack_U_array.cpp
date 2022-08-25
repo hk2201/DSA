@@ -27,6 +27,8 @@ void push(struct stack *p, int val)
         p->top = p->top + 1;
         p->arr[p->top] = val;
     }
+
+    
 }
 
 // peeking using the index of the element

@@ -78,7 +78,7 @@ int main()
 
     inOrder(root);
 
-    insert(root, 0);
+    insert(root, 2);
     cout << endl;
     inOrder(root);
 

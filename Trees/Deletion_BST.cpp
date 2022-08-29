@@ -90,7 +90,7 @@ int main()
     lr->right = lrr;
 
     inorder(root);
-    Deletion(root, 3);
+    Deletion(root, 7);
     cout << endl;
     inorder(root);
 

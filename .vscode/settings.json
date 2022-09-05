@@ -9,6 +9,8 @@
         "string_view": "c",
         "initializer_list": "c",
         "regex": "c",
-        "utility": "c"
+        "utility": "c",
+        "*.tcc": "cpp",
+        "list": "cpp"
     }
 }

@@ -100,22 +100,18 @@ void heapify(int arr[], int n, int i)
     }
 }
 
-void heapsort(int arr[],int n){
+void heapsort(int arr[], int n)
+{
     int size = n;
 
-    while (size>1)
+    while (size > 1)
     {
-        swap(arr[size],arr[1]);
+        swap(arr[size], arr[1]);
         size--;
 
-        heapify(arr,size,1);
+        heapify(arr, size, 1);
     }
-    
 }
-
-
-
-
 
 int main()
 {
@@ -143,17 +139,12 @@ int main()
     }
     cout << endl;
 
-
-    heapsort(arr,n);
+    heapsort(arr, n);
     for (int i = 1; i <= n; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
-
-
-
-
 
     return 0;
 }

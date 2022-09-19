@@ -12,7 +12,7 @@ void setZero(vector<vector<int>> matrix)
         {
             col0 = 0;
         }
-        for (int j = 0; j < col; j++)
+        for (int j = 1; j < col; j++)
         {
             if (matrix[i][j] == 0)
             {

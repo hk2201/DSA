@@ -77,10 +77,10 @@ int main()
     enqueue(&q, 30);
     enqueue(&q, 40);
     cout << dequeue(&q) << endl;
-    cout << dequeue(&q) << endl;
-    cout << dequeue(&q) << endl;
-    cout << dequeue(&q) << endl;
-    cout << dequeue(&q) << endl;
+    // cout << dequeue(&q) << endl;
+    // cout << dequeue(&q) << endl;
+    // cout << dequeue(&q) << endl;
+    // cout << dequeue(&q) << endl;
     // traversal(&q);
 
     return 0;
